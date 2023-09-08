@@ -1,22 +1,23 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
-**/
+ */
 int main(void)
 {
-	char alpha, upalpha;
+	char alpha;
 
 	for (alpha = 'a' ; alpha <= 'z' ; alpha++)
 	{
 		putchar(alpha);
 	}
-	for (upalpha = 'A' ; upalpha <= 'Z' ; upalpha++)
+	for (alpha = 'A' ; alpha <= 'Z' ; alpha++)
 	{
-        	putchar(upalpha);
+		putchar(alpha);
 	}
 		putchar('\n');
-
 	return (0);
 }
