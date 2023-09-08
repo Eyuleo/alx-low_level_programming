@@ -17,13 +17,11 @@ int main(void)
 			putchar(' ');
 			putchar((combnum / 10) + '0');
 			putchar((combnum % 10) + '0');
-			
 			if (num == 98 && combnum == 99)
 			continue;
 
 			putchar(',');
 			putchar(' ');
-			
 		}
 	}
 		putchar('\n');
