@@ -18,14 +18,12 @@ int main(void)
 				putchar(combnum);
 				putchar(combnum2);
 			
-			
 				if (num == '7' && combnum == '8' && combnum2 == '9')
 					continue;
 
 				putchar(',');
 				putchar(' ');
 			}
-			
 		}
 	}
 		putchar('\n');
