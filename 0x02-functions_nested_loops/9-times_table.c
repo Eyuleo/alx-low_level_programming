@@ -7,27 +7,28 @@
 **/
 void times_table(void)
 {
-	int i, j, result;
-	
+	int i, j, mul;
+
 	for (i = 0; i <= 9; i++)
 	{
-		putchar('0');
+		putchar(48);
 		for (j = 1; j <= 9; j++)
 		{
-			result = i * j;
-			putchar(',');
-			putchar(' ');
-			if (result <= 9)
+			mul = i * j;
+			putchar(44);
+			putchar(32);
+			if (mul <= 9)
 			{
-				putchar(' ');
-				putchar(result + '0');
+				putchar(32);
+				putchar(mul + 48);
 			}
 			else
 			{
-				putchar((result / 10) + '0');
-				_putchar((result % 10) + '0');
+				putchar((mul / 10) + 48);
+				putchar((mul % 10) + 48);
 			}
 		}
 		putchar('\n');
 	}
+
 }
