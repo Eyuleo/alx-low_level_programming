@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * multiples of 9
+ * times_table - Prints the 9 times table
  *
- * return multiple table
-**/
+ * Return: no return
+ */
 void times_table(void)
 {
 	int i, j, mul;
