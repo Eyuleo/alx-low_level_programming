@@ -6,8 +6,10 @@
  * Return: Always 0.
  */
 void print_alphabet_x10(void)
-{
-	for (int i = 0 ; i <= 10 ; i++)
+{	
+	int i = 0;
+
+	for (i ; i <= 10 ; i++)
 	{
 		char alpha = 'a';
 		while (alpha <= 'z')
