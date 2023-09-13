@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * prints last digit of an integer
- *
- * return ast digit
-**/
+* print_last_digit -a function that prints the last digit of a number
+*
+* @n: takes signed integer
+*
+* Return: The last digit
+*/
 int print_last_digit(int n)
 {
 	int last = n % 10;
@@ -15,6 +17,6 @@ int print_last_digit(int n)
 
 	}
 
-	_putchar(last + '0')
-	return (last)
+	_putchar(last + '0');
+	return (last);
 }
