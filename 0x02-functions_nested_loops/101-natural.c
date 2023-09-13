@@ -8,14 +8,14 @@
 int main(void)
 {
 	int num, multiple;
-	
+
 	for (num = 1; num < 1024; num++)
-	{
-		if ((num % 3 == 0) || (num % 5 == 0))
-		{
-			multiple += num;
-		}
-	}
-	printf("%d\n", multiple);
-	return (0);
+        {
+                if ((num % 3 == 0) || (num % 5 == 0))
+                {
+                        multiple += num;
+                }
+        }
+        printf("%d\n", multiple);
+        return (0);
 }
