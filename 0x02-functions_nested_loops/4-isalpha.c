@@ -1,10 +1,11 @@
 #include "main.h"
 /**
+ *  _isalpha - checks for lowercase character or uppercase
  *
- * main - checks if c is letter, uppercase or lowercase
+ * @c: single letter input
  *
- * return 1 if 0 otherwise
-**/
+ * Return: 1 if int c is lowercase, 0 if else
+ */
 
 int _isalpha(int c)
 {
@@ -12,7 +13,7 @@ int _isalpha(int c)
 	{
 		return (1);
 	}
-	else 
+	else
 	{
 		return (0);
 	}
