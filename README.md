@@ -1,7 +1,7 @@
 ## Alx low level programming repo  
 ----
 
-* this repo contain all files that are part of the alx low level programming curriculum
+- The repository contain all projects that are part of the ALX SE low level programming curriculum
   
 ----
 
