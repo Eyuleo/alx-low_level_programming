@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <string.h>
+#include "main.h"
 /**
  * _puts - prints a string followed by new line
  * @str: - points to a string type
@@ -8,6 +7,11 @@
 */
 void _puts(char *str)
 {
-	putchar(str);
-	putchar('\n');
+	int i = 0;
+
+	for (; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
