@@ -14,4 +14,4 @@
 8. [You are so much sunshine in every square inch](./8-print_square.c)
 9. [Fizz-Buzz](./9-fizz_buzz.c)
 10. [Triangles](./10-print_triangles.c)
-12. [Numbers have life; they're not just symbols on paper](./101-print_numbers.c)
+12. [Numbers have life; they're not just symbols on paper](./101-print_number.c)
