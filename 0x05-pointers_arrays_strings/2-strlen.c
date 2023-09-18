@@ -1,3 +1,4 @@
+#include <string.h>
 /**
  * _strlen - returns length of a string
  * @s: collection of chars or string
