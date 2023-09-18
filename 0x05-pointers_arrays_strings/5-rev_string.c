@@ -6,13 +6,13 @@
  */
 void rev_string(char *s)
 {
-	if (s == NULL)
-		return;
-
 	int len = 0;
 	int start = 0;
 	int end = 0;
 	char temp;
+
+	if (s == NULL)
+		return;
 
 	while (s[len] != '\0')
 	{	len++;
