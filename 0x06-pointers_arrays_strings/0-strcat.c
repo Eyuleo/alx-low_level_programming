@@ -1,18 +1,20 @@
 /**
  * _strcat - concatnate two strings
- * @dest: first string
- * @src: second string
+ * @dest: destination string
+ * @src: source string
  *
  * Return: the concatnated string
 */
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
-	int j = strlen(dest);
+	int i, j = 0;
 
-	for(; src[i] != '\0'; i++)
+	for(; dest[i] != '\0'; i++)
 	{
-		dest[i + j] = src[i];
+	}
+	for (; src[j] != '\0'; j++)
+	{
+		dest[i + j] = src[j];
 	}
 	dest[i + j] = '\0';
 
