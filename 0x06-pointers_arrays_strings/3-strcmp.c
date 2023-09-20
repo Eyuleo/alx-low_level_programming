@@ -8,7 +8,8 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0, result = 0;
+	int i = 0;
+        int result = 0;
 
 	while (result == 0)
 	{
