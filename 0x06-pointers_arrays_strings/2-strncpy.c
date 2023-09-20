@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strncpy - copy at most n chars from src to dest
  * @src: source string
