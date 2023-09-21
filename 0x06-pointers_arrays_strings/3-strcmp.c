@@ -2,7 +2,7 @@
 /**
  * _strcmp - compares string
  * @s1: first string
- * @s2:second string
+ * @s2: second string
  *
  * Return: 0 if s1 and s2 are equal else otherwise
  */
@@ -18,6 +18,7 @@ int _strcmp(char *s1, char *s2)
 		result = *(s1 + i) - *(s2 + i);
 		i++;
 	}
+
 	return (result);
 }
 
