@@ -5,18 +5,16 @@
  *
  * Return: uppercase string
  */
-char *string_toupper(char *alpha)
+char *string_toupper(char *s)
 {
-	int i = 0;
+	int count = 0;
 
-	while (*(str + i) != '\0')
+	while (*(s + count) != '\0')
 	{
-		if ((*(str + i) >= 'a') && (*(str + i) <= 'z'))
-		{
-			*(str + i) = *(str + i) - 32;
-		}
-		i++;
+		if ((*(s + count) >= 97) && (*(s + count) <= 122))
+			*(s + count) = *(s + count) - 32;
+		count++;
 	}
 
-	return (str);
+	return (s);
 }
