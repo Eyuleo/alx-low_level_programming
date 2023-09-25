@@ -5,17 +5,25 @@
  * @c: charcter
  *
  * Return: pointer to the char or NULL
- */
+*/
 char *_strchr(char *s, char c)
 {
 	int i = 0;
+	int j = 0;
+	char *temp;
 
-	for (; s[i] >= '\0'; i++)
+	for (; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
 		{
-			return (s + i);
+			temp = &s[i];
+			j = 1;
+			break;
 		}
 	}
-	return (NULL);
+	if (j == 0)
+	{
+		temp = '\0';
+	}
+	return (temp);
 }
