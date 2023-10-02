@@ -10,13 +10,12 @@
 int main(int argc, char *argv[])
 {
 	int i = 1, result = 1;
+	int value;
 
 	if (argc >= 2)
 	{
 		for (; i < argc; i++)
 		{
-			int value;
-
 			value = atoi(argv[i]);
 			result *= value;
 		}
