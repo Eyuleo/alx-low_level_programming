@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * isdigit - checks if the input is digit
+ *_isdigit - checks if the input is digit
  * @str: input
  *
  * Return: 0 or 1
@@ -41,7 +41,6 @@ int main(int argc, char *argv[])
 			}
 
 			value = atoi(argv[i]);
-			
 			sum += value;
 		}
 		printf("%d\n", sum);
