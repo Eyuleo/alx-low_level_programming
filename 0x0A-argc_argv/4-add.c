@@ -1,6 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ * isdigit - checks if the input is digit
+ * @str: input
+ *
+ * Return: 0 or 1
+ */
+int _isdigit(const char *str)
+{
+	while (*str)
+	{
+		if (*str < '0' || *str > '9')
+		{
+			return (0);
+		}
+		str++;
+	}
+	return (1);
+}
+/**
  * main - entry point
  * @argc: arg count
  * @argv: arg vector
@@ -10,24 +28,25 @@
 int main(int argc, char *argv[])
 {
 	int i = 1, sum = 0;
+	int value;
 
-	if (argc >= 1)
+	if (argc >= 2)
 	{
 		for (; i < argc; i++)
 		{
-			int value;
-
-			value = atoi(argv[i]);
-			if (value == 0 && *argv[i] != '\0')
+			if (!_isdigit(argv[i]))
 			{
 				printf("Error\n");
 				return (1);
 			}
+
+			value = atoi(argv[i]);
+			
 			sum += value;
 		}
 		printf("%d\n", sum);
 	}
 	else
-		printf("%d\n", 0);
+		printf("0\n");
 	return (0);
 }
