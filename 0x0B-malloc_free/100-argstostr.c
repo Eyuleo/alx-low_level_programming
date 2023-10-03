@@ -33,6 +33,6 @@ char *argstostr(int ac, char **av)
 		}
 		new_str[pos++] = '\n';
 	}
-	new_str[pos] = '\0';
+	new_str[pos - 1] = '\0';
 	return (new_str);
 }
