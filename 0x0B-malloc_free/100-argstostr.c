@@ -8,7 +8,8 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int total_len = 0, i = 0, j = 0, pos = 0;
+	int total_len = 0, i = 0, pos = 0;
+	long unsigned int j = 0;
 	char *new_str;
 
 	if (ac == 0 || av == NULL)
