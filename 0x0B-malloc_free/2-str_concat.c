@@ -25,12 +25,18 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s1 != NULL)
 	{
-		strcpy(new_str, s1);
-		i += len1;
+		while (*s1 != '\0')
+		{
+			new_str[i++] = *s1++;
+		}
 	}
 	if (s2 != NULL)
 	{
-		strcpy(new_str + i, s2);
+		while (*s2 != '\0')
+		{
+			new_str[i++] = *s2++;
+		}
 	}
+	new_str[i] = '\0';
 	return (new_str);
 }
