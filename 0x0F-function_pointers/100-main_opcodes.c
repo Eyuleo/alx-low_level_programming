@@ -4,13 +4,14 @@
  * main - prints op codes
  * @argc: arg count
  * @argv: arg pointer
- * 
+ *
  * Return: 0
  */
 int main(int argc, char *argv[])
 {
 	int num_bytes, i = 0;
-	char *ptr = (char*) &main;
+	char *ptr = (char *) &main;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -25,4 +26,5 @@ int main(int argc, char *argv[])
 	for (; i < num_bytes; i++)
 		printf("%02x ", (unsigned char)ptr[i]);
 	printf("\n");
+	return (0);
 }
