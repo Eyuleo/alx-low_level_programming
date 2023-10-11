@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int num_bytes, i = 0;
-	char *ptr = (char *) &main;
+	char *ptr;
 
 	if (argc != 2)
 	{
@@ -23,8 +23,16 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
+	ptr = (char *)main;
 	for (; i < num_bytes; i++)
-		printf("%02x ", (unsigned char)ptr[i]);
-	printf("\n");
+	{
+		if (i == num_bytes - 1)
+		{
+			printf("%02hhx\n", ptr[i]);
+			break;
+		}
+		printf("%02hhx ", ptr[i]);
+	}
+
 	return (0);
 }
