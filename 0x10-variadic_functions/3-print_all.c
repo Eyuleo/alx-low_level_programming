@@ -7,15 +7,15 @@
  */
 void print_all(const char * const format, ...)
 {
-	int format_index = 0;
+	int i = 0;
 	char *str;
 	va_list args;
 
 	va_start(args, format);
 
-	while (format[format_index] != '\0')
+	while (format[i] != '\0')
 	{
-		switch (format[format_index])
+		switch (format[i])
 		{
 			case 'c':
 				printf("%c", va_arg(args, int));
@@ -38,9 +38,12 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
-		format_index++;
-		if (format[format_index] != '\0' && format[format_index] != 's')
+		i++;
+		if (format[i] != '\0' && (format[i] == 'c' || format[i] == 'i' ||
+				format[i] == 'f' || format[i] == 's'))
+		{
 			printf(", ");
+		}
 	}
 	va_end(args);
 	printf("\n");
