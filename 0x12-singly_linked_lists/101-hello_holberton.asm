@@ -8,6 +8,6 @@ section .text
 
 main:
     mov rdi, hello_holberton    
-    mov rax, 0          
+    xor rax, rax        
     call printf
     ret
