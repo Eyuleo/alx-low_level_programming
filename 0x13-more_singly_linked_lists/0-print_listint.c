@@ -9,6 +9,9 @@ size_t print_listint(const listint_t *h)
 {
 	size_t node_count = 0;
 
+	if (!h)
+		return (node_count);
+
 	while (h != 0)
 	{
 		printf("%d\n", h->n);
