@@ -8,25 +8,23 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t count = 0;
-	const listint_t *slow_pointer = head;
-	const listint_t *fast_pointer = head;
+	const listint_t *slow_pointer;
+	const listint_t *fast_pointer;
 
 	if (head == NULL)
 		return (0);
-
-	while (slow_pointer && fast_pointer && fast_pointer->next)
+	slow_poiter = head;
+	fast_pointer = head->next;
+	while (fast_pointer != NULL && fast_pointer < slow_pointer)
 	{
-		printf("%d\n", slow_pointer->n);
-		count++;
+		count += 1;
+		printf("[%p] %i\n", (void *)slow_pointer, slow_pointer->n);
 		slow_pointer = slow_pointer->next;
-		fast_pointer = fast_pointer->next->next;
-
-		if (slow_pointer == fast_pointer)
-		{
-			fprintf(stderr, "Linked list contains a loop. Exiting with status 98.\n");
-			exit(98);
-		}
+		fast_pointer = fast_pointer->next;
 	}
+	printf("[%p] %i\n", (void *)slow_pointer, slow_pointer->n);
+	count += 1;
+	if (fast_pointer)
+		printf("-> [%p] %i\n", (void *)fast_pointer, fast_pointer->n);
 	return (count);
-
 }
