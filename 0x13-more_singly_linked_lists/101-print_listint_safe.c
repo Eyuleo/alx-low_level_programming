@@ -13,7 +13,7 @@ size_t print_listint_safe(const listint_t *head)
 
 	if (head == NULL)
 		return (0);
-	slow_poiter = head;
+	slow_pointer = head;
 	fast_pointer = head->next;
 	while (fast_pointer != NULL && fast_pointer < slow_pointer)
 	{
