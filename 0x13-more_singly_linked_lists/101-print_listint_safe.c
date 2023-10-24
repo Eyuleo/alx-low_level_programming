@@ -8,12 +8,11 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t count = 0;
-	listint_t *slow_pointer, *fast_pointer;
+	const listint_t *slow_pointer = head;
+	const listint_t *fast_pointer = head;
 
 	if (head == NULL)
 		return (0);
-	slow_pointer = head;
-	fast_pointer = head;
 
 	while (slow_pointer && fast_pointer && fast_pointer->next)
 	{
