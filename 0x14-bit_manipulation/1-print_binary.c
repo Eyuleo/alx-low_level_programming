@@ -10,7 +10,7 @@ void print_binary(unsigned long int n)
 	unsigned long int shift;
 	int flag = 0;
 
-	if (n == 0)
+	if ((n >> 1) == 0 && n == 0)
 	{
 		putchar('0');
 		return;
