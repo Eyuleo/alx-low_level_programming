@@ -2,7 +2,7 @@
 <a href="https://ibb.co/4ShqJSZ"><img src="https://i.ibb.co/4ShqJSZ/ALX-800x529-removebg-preview.png"  border="0"></a>
 </p>
 
-<h1 align="center">C - Programming</h1>
+<h1 align="center">ALX C - Programming</h1>
 
 ## Alx low level programming repo  
 
